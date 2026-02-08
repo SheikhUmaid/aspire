@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const slides = [
   {
     id: 1,
-    image: '/images/hero_youth.png',
+    image: '/images/youth.png',
     title: 'Youth Development & Empowerment',
     description: '"The youth of today are the leaders of tomorrow."',
     ctaText: 'Empower Youth',
@@ -13,7 +13,7 @@ const slides = [
   },
   {
     id: 2,
-    image: '/images/hero_women.png',
+    image: '/images/women.png',
     title: 'Women Empowerment & Livelihood',
     description: '"There is no tool for development more effective than the empowerment of women."',
     ctaText: 'Support Women',
@@ -21,7 +21,7 @@ const slides = [
   },
   {
     id: 3,
-    image: '/images/hero_youth.png', // Reusing youth image
+    image: '/images/sports.png', // Reusing youth image
     title: 'Sports Promotion & Youth Fitness',
     description: '"Sports do not build character, they reveal it."',
     ctaText: 'Join the Game',
@@ -29,7 +29,7 @@ const slides = [
   },
   {
     id: 4,
-    image: '/images/hero_women.png', // Reusing women image (learning context)
+    image: '/images/digital.png', // Reusing women image (learning context)
     title: 'Digital Technologies & Skill Development',
     description: '"Technology is best when it brings people together."',
     ctaText: 'Get Digital',
@@ -37,7 +37,7 @@ const slides = [
   },
   {
     id: 5,
-    image: '/images/hero_health.png', // Reusing health image
+    image: '/images/mentalhealth.png', // Reusing health image
     title: 'Mental Health Awareness',
     description: '"Mental health is not a destination, but a process. It\'s about how you drive, not where you\'re going."',
     ctaText: 'Break the Stigma',
@@ -45,7 +45,7 @@ const slides = [
   },
   {
     id: 6,
-    image: '/images/hero_health.png',
+    image: '/images/health.png',
     title: 'Health Awareness & Medical Camps',
     description: '"He who has health has hope; and he who has hope has everything."',
     ctaText: 'Health for All',
@@ -53,7 +53,7 @@ const slides = [
   },
   {
     id: 7,
-    image: '/images/hero_health.png', // Reusing health image
+    image: '/images/vac.png', // Reusing health image
     title: 'Vaccination Awareness Programs',
     description: '"Vaccines bring us closer. Prevention is better than cure."',
     ctaText: 'Stay Safe',
@@ -61,7 +61,7 @@ const slides = [
   },
   {
     id: 8,
-    image: '/images/hero_youth.png', // Reusing youth image (compassion context)
+    image: '/images/animal.png', // Reusing youth image (compassion context)
     title: 'Animal Welfare Programs',
     description: '"The greatness of a nation can be judged by the way its animals are treated."',
     ctaText: 'Protect Animals',
