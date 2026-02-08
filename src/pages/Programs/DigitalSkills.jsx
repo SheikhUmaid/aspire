@@ -12,8 +12,13 @@ function DigitalSkills() {
 
       {/* ================= HERO ================= */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)] to-[var(--green-dark)]" />
-        <div className="absolute inset-0 bg-black/15" />
+        <img
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+          alt="Digital skills training"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)]/85 to-[var(--green-dark)]/85" />
+        <div className="absolute inset-0 bg-black/10" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <Laptop size={64} className="mx-auto mb-6 opacity-90" />
@@ -69,7 +74,7 @@ function DigitalSkills() {
             ].map((stat, i) => (
               <div
                 key={i}
-                className="bg-[var(--bg-cream)] rounded-2xl p-6 text-center"
+                className="bg-[var(--bg-cream)] rounded-2xl p-6 text-center border border-[var(--green-muted)]/20"
               >
                 <stat.icon className="mx-auto mb-3 text-[var(--green-primary)]" />
                 <div className="text-3xl font-semibold text-[var(--green-primary)]">
@@ -81,6 +86,24 @@ function DigitalSkills() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ================= IMAGE STRIP ================= */}
+      <section className="py-16 bg-[var(--bg-cream)]">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+            "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+            "https://images.unsplash.com/photo-1531482615713-2afd69097998",
+          ].map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt="Digital skills activity"
+              className="rounded-2xl object-cover h-[240px] w-full"
+            />
+          ))}
         </div>
       </section>
 
@@ -109,7 +132,7 @@ function DigitalSkills() {
             ].map((title, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl p-8 hover:shadow-md transition"
+                className="bg-white rounded-2xl p-8 hover:shadow-md transition border border-[var(--green-muted)]/20"
               >
                 <div className="text-[var(--green-muted)] text-sm font-medium mb-3">
                   {String(i + 1).padStart(2, "0")}

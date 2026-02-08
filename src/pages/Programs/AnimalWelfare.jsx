@@ -12,8 +12,13 @@ function AnimalWelfare() {
 
       {/* ================= HERO ================= */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)] to-[var(--green-dark)]" />
-        <div className="absolute inset-0 bg-black/15" />
+        <img
+          src="https://images.unsplash.com/photo-1558788353-f76d92427f16"
+          alt="Animal welfare and community care"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)]/85 to-[var(--green-dark)]/85" />
+        <div className="absolute inset-0 bg-black/10" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <PawPrint size={64} className="mx-auto mb-6 opacity-90" />
@@ -69,7 +74,7 @@ function AnimalWelfare() {
             ].map((stat, i) => (
               <div
                 key={i}
-                className="bg-[var(--bg-cream)] rounded-2xl p-6 text-center"
+                className="bg-[var(--bg-cream)] rounded-2xl p-6 text-center border border-[var(--green-muted)]/20"
               >
                 <stat.icon className="mx-auto mb-3 text-[var(--green-primary)]" />
                 <div className="text-3xl font-semibold text-[var(--green-primary)]">
@@ -83,6 +88,7 @@ function AnimalWelfare() {
           </div>
         </div>
       </section>
+
 
       {/* ================= ACTIVITIES ================= */}
       <section className="py-24 bg-[var(--bg-cream)]">
@@ -107,7 +113,7 @@ function AnimalWelfare() {
             ].map((title, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl p-8 hover:shadow-md transition"
+                className="bg-white rounded-2xl p-8 hover:shadow-md transition border border-[var(--green-muted)]/20"
               >
                 <div className="text-[var(--green-muted)] text-sm font-medium mb-3">
                   {String(i + 1).padStart(2, "0")}

@@ -12,8 +12,13 @@ function WomenEmpowerment() {
 
       {/* ================= HERO ================= */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)] to-[var(--green-dark)]" />
-        <div className="absolute inset-0 bg-black/20" />
+        <img
+          src="https://www.qalara.com/blog/wp-content/uploads/2023/02/1.-Pashmina2.jpg"
+          alt="Women empowerment"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)]/85 to-[var(--green-dark)]/85" />
+        <div className="absolute inset-0 bg-black/10" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <Heart size={64} className="mx-auto mb-6 opacity-90" />
@@ -61,9 +66,9 @@ function WomenEmpowerment() {
           {/* Image */}
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+              src="https://img-cdn.publive.online/fit-in/640x430/filters:format(webp)/30-stades/media/media_files/ryKVFNVdDwwL0gDqltn5.jpg"
               alt="Women skill training"
-              className="rounded-3xl shadow-lg object-cover w-full h-[420px]"
+              className=" shadow-lg object-cover w-full h-[420px]"
             />
           </div>
         </div>
@@ -79,7 +84,7 @@ function WomenEmpowerment() {
           ].map((stat, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl p-8"
+              className="bg-white rounded-2xl p-8 border border-[var(--green-muted)]/20 hover:shadow-md transition"
             >
               <stat.icon className="mx-auto mb-3 text-[var(--green-primary)]" />
               <div className="text-3xl font-semibold text-[var(--green-primary)]">
@@ -100,9 +105,9 @@ function WomenEmpowerment() {
           {/* Image strip */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
             {[
-              "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c",
-              "https://images.unsplash.com/photo-1599059813005-11265ba4b4ce",
-              "https://images.unsplash.com/photo-1586773860418-d37222d8fce3",
+              "https://www.dailygoodmorningkashmir.com/wp-content/uploads/2022/08/Kashmir-handicrafts-on-Ventilator-768x515.jpg",
+              "https://www.webpulsefoundation.org/uploaded-files/category/images/thumbs/Women-Empowerment-thumbs-420X630.jpg",
+              "https://images.hindustantimes.com/img/2022/03/22/550x309/50a00a26-aa0f-11ec-872a-99283e1803a9_1647974556637.jpg",
             ].map((src, i) => (
               <img
                 key={i}
@@ -135,7 +140,7 @@ function WomenEmpowerment() {
             ].map((title, i) => (
               <div
                 key={i}
-                className="bg-[var(--bg-cream)] rounded-2xl p-8 hover:shadow-md transition"
+                className="bg-[var(--bg-cream)] rounded-2xl p-8 hover:shadow-md transition border border-[var(--green-muted)]/20"
               >
                 <div className="text-[var(--green-muted)] text-sm font-medium mb-3">
                   {String(i + 1).padStart(2, "0")}

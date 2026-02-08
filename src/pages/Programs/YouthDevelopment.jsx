@@ -12,8 +12,13 @@ function YouthDevelopment() {
 
       {/* ================= HERO ================= */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)] to-[var(--green-dark)]" />
-        <div className="absolute inset-0 bg-black/15" />
+        <img
+          src="https://cdn-ilakiob.nitrocdn.com/oJklqYwxbRFupdZPJZjIEqQluNgfQlrA/assets/images/optimized/rev-c998e24/standingstrongclubs.com/wp-content/uploads/2024/08/6-Types-of-Youth-Empowerment.png"
+          alt="Youth empowerment"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)]/85 to-[var(--green-dark)]/85" />
+        <div className="absolute inset-0 bg-black/10" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <Users size={64} className="mx-auto mb-6 opacity-90" />
@@ -65,7 +70,7 @@ function YouthDevelopment() {
             ].map((stat, i) => (
               <div
                 key={i}
-                className="bg-[var(--bg-cream)] rounded-2xl p-6 text-center"
+                className="bg-[var(--bg-cream)] rounded-2xl p-6 text-center border border-[var(--green-muted)]/20 hover:shadow-md transition"
               >
                 <stat.icon className="mx-auto mb-3 text-[var(--green-primary)]" />
                 <div className="text-3xl font-semibold text-[var(--green-primary)]">
@@ -78,6 +83,9 @@ function YouthDevelopment() {
             ))}
           </div>
         </div>
+
+        {/* Supporting Image */}
+        
       </section>
 
       {/* ================= ACTIVITIES ================= */}
@@ -105,7 +113,7 @@ function YouthDevelopment() {
             ].map((title, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl p-8 hover:shadow-md transition"
+                className="bg-white rounded-2xl p-8 hover:shadow-md transition border border-[var(--green-muted)]/20"
               >
                 <div className="text-[var(--green-muted)] font-medium text-sm mb-3">
                   {String(i + 1).padStart(2, "0")}

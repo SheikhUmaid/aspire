@@ -12,8 +12,13 @@ function MentalHealth() {
 
       {/* ================= HERO ================= */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)] to-[var(--green-dark)]" />
-        <div className="absolute inset-0 bg-black/15" />
+        <img
+          src="https://images.unsplash.com/photo-1527137342181-19aab11a8ee8"
+          alt="Mental health support"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)]/85 to-[var(--green-dark)]/85" />
+        <div className="absolute inset-0 bg-black/10" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <Brain size={64} className="mx-auto mb-6 opacity-90" />
@@ -69,7 +74,7 @@ function MentalHealth() {
             ].map((stat, i) => (
               <div
                 key={i}
-                className="bg-[var(--bg-cream)] rounded-2xl p-6 text-center"
+                className="bg-[var(--bg-cream)] rounded-2xl p-6 text-center border border-[var(--green-muted)]/20"
               >
                 <stat.icon className="mx-auto mb-3 text-[var(--green-primary)]" />
                 <div className="text-3xl font-semibold text-[var(--green-primary)]">
@@ -84,8 +89,10 @@ function MentalHealth() {
         </div>
       </section>
 
+     
+
       {/* ================= ACTIVITIES ================= */}
-      <section className="py-24 bg-[var(--bg-cream)]">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-semibold text-center text-[var(--green-primary)] mb-4">
             Our Mental Health Activities
@@ -109,7 +116,7 @@ function MentalHealth() {
             ].map((title, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl p-8 hover:shadow-md transition"
+                className="bg-[var(--bg-cream)] rounded-2xl p-8 hover:shadow-md transition border border-[var(--green-muted)]/20"
               >
                 <div className="text-[var(--green-muted)] text-sm font-medium mb-3">
                   {String(i + 1).padStart(2, "0")}
