@@ -39,7 +39,7 @@ function Header() {
                 Aspire Technologies
               </span>
               <span className="text-[0.85rem] text-[var(--text-dark)]/60 font-medium uppercase tracking-wider">
-                Empowering Communities
+                Born to lead. Serving to Empower
               </span>
             </div>
           </Link>
@@ -79,8 +79,8 @@ function Header() {
 
               <div
                 className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 bg-white shadow-xl rounded-xl min-w-[600px] p-4 grid grid-cols-2 gap-2 border border-black/5 transition-all ${isProgramsOpen
-                    ? 'opacity-100 visible scale-100'
-                    : 'opacity-0 invisible scale-95'
+                  ? 'opacity-100 visible scale-100'
+                  : 'opacity-0 invisible scale-95'
                   }`}
               >
                 {[
