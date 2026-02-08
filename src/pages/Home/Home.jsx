@@ -13,12 +13,12 @@ function Home() {
       <section className="py-15 md:py-25 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto ">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            
+
             {/* Image Side */}
             <div className="order-2 lg:order-1 relative">
               <div className="relative  overflow-hidden aspect-[1/1]">
                 <img
-                  src="https://peaceinsight.s3.amazonaws.com/media/images/IMG_20230221_133357.width-500.jpg"
+                  src="/images/womenshawl.png"
                   alt="Community development"
                   className="w-full h-full object-cover"
                 />
@@ -69,7 +69,7 @@ function Home() {
       <section className="py-24 md:py-32 bg-[var(--green-primary)] text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[var(--accent-gold)]/10 rounded-full blur-3xl"></div>
-        
+
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <span className="inline-block uppercase tracking-widest text-xs font-medium text-white/70 mb-4">

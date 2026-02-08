@@ -66,7 +66,7 @@ function WomenEmpowerment() {
           {/* Image */}
           <div className="relative">
             <img
-              src="https://img-cdn.publive.online/fit-in/640x430/filters:format(webp)/30-stades/media/media_files/ryKVFNVdDwwL0gDqltn5.jpg"
+              src="/images/womenshawl.png"
               alt="Women skill training"
               className=" shadow-lg object-cover w-full h-[420px]"
             />
