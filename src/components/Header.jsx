@@ -18,7 +18,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-[1000] bg-white/95 backdrop-blur-sm border-b border-[var(--green-muted)]/20">
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="flex justify-between items-center py-3 h-20 md:h-[70px]">
+        <div className="flex justify-between items-center py-3 h-20 md:h-[90px]">
 
           {/* LOGO */}
           <Link
@@ -26,7 +26,7 @@ function Header() {
             className="flex items-center gap-3 no-underline group"
             onClick={closeMobileMenu}
           >
-            <div className="w-[42px] h-[42px] rounded-lg overflow-hidden shadow-sm transition-transform group-hover:scale-105 group-hover:-rotate-2">
+            <div className="w-[60px] h-[60px] rounded-lg overflow-hidden shadow-sm transition-transform group-hover:scale-105 group-hover:-rotate-2">
               <img
                 src="/logo.jpeg"
                 alt="Aspire Technologies Logo"
@@ -35,10 +35,10 @@ function Header() {
             </div>
 
             <div className="flex flex-col">
-              <span className="text-[1.35rem] font-extrabold text-[var(--green-primary)] leading-tight tracking-tight">
+              <span className="text-[1.6rem] font-extrabold text-[var(--green-primary)] leading-tight tracking-tight">
                 Aspire Technologies
               </span>
-              <span className="text-[0.7rem] text-[var(--text-dark)]/60 font-medium uppercase tracking-wider">
+              <span className="text-[0.85rem] text-[var(--text-dark)]/60 font-medium uppercase tracking-wider">
                 Empowering Communities
               </span>
             </div>
@@ -78,11 +78,10 @@ function Header() {
               </button>
 
               <div
-                className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 bg-white shadow-xl rounded-xl min-w-[600px] p-4 grid grid-cols-2 gap-2 border border-black/5 transition-all ${
-                  isProgramsOpen
+                className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 bg-white shadow-xl rounded-xl min-w-[600px] p-4 grid grid-cols-2 gap-2 border border-black/5 transition-all ${isProgramsOpen
                     ? 'opacity-100 visible scale-100'
                     : 'opacity-0 invisible scale-95'
-                }`}
+                  }`}
               >
                 {[
                   ['Youth Development & Empowerment', '/programs/youth-development'],
@@ -135,7 +134,7 @@ function Header() {
 
       {/* MOBILE NAV */}
       {isMobileMenuOpen && (
-        <nav className="lg:hidden fixed top-[70px] inset-x-0 bg-white shadow-lg border-t border-[var(--green-muted)]/20 max-h-[90vh] overflow-y-auto">
+        <nav className="lg:hidden fixed top-[90px] inset-x-0 bg-white shadow-lg border-t border-[var(--green-muted)]/20 max-h-[90vh] overflow-y-auto">
           <div className="flex flex-col">
             {[
               ['Home', '/'],
