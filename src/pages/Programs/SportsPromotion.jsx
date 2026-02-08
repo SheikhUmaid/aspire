@@ -1,192 +1,212 @@
-import { Trophy, Target, Award, Heart, Users, CheckCircle } from 'lucide-react';
+import {
+  Trophy,
+  Target,
+  Award,
+  CheckCircle,
+} from "lucide-react";
 
 function SportsPromotion() {
-    return (
-        <div className="program-page">
-            <section className="program-header">
-                <div className="container">
-                    <div className="header-content">
-                        <Trophy className="header-icon" size={64} />
-                        <h1>Sports Promotion & Youth Fitness</h1>
-                        <p className="header-tagline">
-                            Building discipline, teamwork, and healthy lifestyles through sports
-                        </p>
-                    </div>
-                </div>
-            </section>
+  return (
+    <div className="w-full text-[var(--text-dark)]">
 
-            <section className="program-intro">
-                <div className="container">
-                    <div className="intro-content">
-                        <div className="intro-text">
-                            <h2>Sports as a Tool for Youth Development</h2>
-                            <p>
-                                Sports and physical activity have the power to transform young lives. Beyond physical fitness, sports teach invaluable life lessons about discipline, perseverance, teamwork, leadership, and handling both success and failure with grace. Unfortunately, many youth in our communities lack access to proper sports facilities, coaching, or organized activities.
-                            </p>
-                            <p>
-                                Aspire Technologies believes that every young person deserves the opportunity to participate in sports and experience its transformative benefits. Our Sports Promotion program works to create accessible sports opportunities, organize tournaments and competitions, provide coaching and training, and build a culture of physical fitness and healthy living among youth.
-                            </p>
-                            <p>
-                                We've seen how sports can redirect youth energy into positive channels, keeping them away from harmful activities like substance abuse and violence. Sports participation builds confidence, teaches goal-setting, develops resilience, and creates strong peer networks. Through our programs, we're not just creating athletes – we're building character, promoting health, and developing future leaders through the power of sports.
-                            </p>
-                        </div>
-                        <div className="intro-stats">
-                            <div className="stat-box">
-                                <Target className="stat-icon" />
-                                <div className="stat-number">2000+</div>
-                                <div className="stat-label">Youth Engaged</div>
-                            </div>
-                            <div className="stat-box">
-                                <Award className="stat-icon" />
-                                <div className="stat-number">100+</div>
-                                <div className="stat-label">Tournaments</div>
-                            </div>
-                            <div className="stat-box">
-                                <Trophy className="stat-icon" />
-                                <div className="stat-number">50+</div>
-                                <div className="stat-label">Schools Reached</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      {/* ================= HERO ================= */}
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1517649763962-0c623066013b"
+          alt="Youth sports"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)]/85 to-[var(--green-dark)]/85"></div>
 
-            <section className="activities-section bg-light-green">
-                <div className="container">
-                    <h2 className="section-title text-center text-green">Our Sports Activities</h2>
-                    <p className="section-subtitle text-center">
-                        Creating opportunities for youth to engage in organized sports and physical fitness
-                    </p>
-                    <div className="activities-grid">
-                        <div className="activity-card">
-                            <div className="activity-number">01</div>
-                            <h3>Sports Tournaments & Competitions</h3>
-                            <p>
-                                We organize regular sports tournaments in cricket, football, volleyball, kabaddi, athletics, and other popular sports. These tournaments provide platforms for youth to showcase talent, experience healthy competition, and develop sportsmanship. Inter-school and inter-community tournaments foster broader social connections.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">02</div>
-                            <h3>School Sports Programs</h3>
-                            <p>
-                                We partner with schools to strengthen their sports programs through equipment support, coach training, and organizing school-level competitions. Regular physical education and sports activities help students develop healthy habits early in life and discover their athletic potential.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">03</div>
-                            <h3>Coaching & Skills Training</h3>
-                            <p>
-                                For youth who show particular interest or talent, we provide access to qualified coaching and systematic skills training. Whether it's cricket coaching, football training, athletics preparation, or other sports, proper guidance helps youth improve techniques and potentially pursue sports more seriously.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">04</div>
-                            <h3>Girls' Sports Promotion</h3>
-                            <p>
-                                We make special efforts to encourage girls' participation in sports, breaking social barriers and gender stereotypes. Girls-only tournaments, female coaches where possible, safe sports environments, and family awareness programs help create opportunities for girls to engage in sports confidently.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">05</div>
-                            <h3>Fitness & Wellness Programs</h3>
-                            <p>
-                                Beyond competitive sports, we promote general fitness through yoga sessions, fitness camps, aerobics classes, and physical wellness workshops. These programs emphasize that staying active doesn't require being a competitive athlete – everyone can benefit from regular physical activity.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">06</div>
-                            <h3>Talent Identification & Support</h3>
-                            <p>
-                                We identify talented young athletes who could benefit from additional support and guidance. Through connections with sports academies, scholarship information, and specialized training opportunities, we help gifted athletes pursue their sports dreams beyond local competitions.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">07</div>
-                            <h3>Sports Equipment Support</h3>
-                            <p>
-                                Lack of equipment should never prevent youth from playing sports. We provide sports equipment support to schools, community centers, and youth groups, ensuring that financial constraints don't become barriers to sports participation and that quality equipment is available for training and competitions.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">08</div>
-                            <h3>Sports-Based Life Skills</h3>
-                            <p>
-                                We integrate life skills education into sports programs, explicitly teaching lessons about teamwork, leadership, conflict resolution, goal-setting, time management, and handling pressure. Sports become a practical training ground for skills that benefit youth throughout life.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="impact-section">
-                <div className="container">
-                    <h2 className="section-title text-center">Impact of Sports Programs</h2>
-                    <p className="section-subtitle text-center">
-                        Sports create positive changes in individual lives and community culture
-                    </p>
-                    <div className="impact-list">
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Improved Physical Health</h4>
-                                <p>Regular sports participation significantly improves cardiovascular health, physical fitness, strength, and overall wellbeing among youth.</p>
-                            </div>
-                        </div>
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Enhanced Mental Wellbeing</h4>
-                                <p>Sports reduce stress, improve mood, boost self-esteem, and help prevent depression and anxiety among young people.</p>
-                            </div>
-                        </div>
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Development of Discipline</h4>
-                                <p>Sports training teaches punctuality, commitment, practice discipline, and the importance of preparation – lessons that transfer to academic and professional life.</p>
-                            </div>
-                        </div>
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Reduced Substance Abuse Risk</h4>
-                                <p>Engaged youth involved in regular sports activities are significantly less likely to experiment with drugs, alcohol, or other harmful substances.</p>
-                            </div>
-                        </div>
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Stronger Community Bonds</h4>
-                                <p>Sports events bring communities together, create shared experiences, and build connections across different social and economic backgrounds.</p>
-                            </div>
-                        </div>
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Leadership Development</h4>
-                                <p>Captains, team organizers, and active participants develop leadership skills that benefit them in all areas of life.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="cta-section">
-                <div className="container">
-                    <div className="cta-content">
-                        <h2>Help Us Build a Sports Culture</h2>
-                        <p>
-                            Support our sports programs by sponsoring tournaments, donating sports equipment, volunteering as coaches, or helping us establish sports facilities in underserved areas. Together we can give every child the chance to play, compete, and grow through sports.
-                        </p>
-                        <div className="cta-buttons">
-                            <a href="/contact" className="btn btn-primary btn-large">Contact Us</a>
-                            <a href="/partners" className="btn btn-secondary btn-large">Become a Sponsor</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+          <Trophy size={64} className="mx-auto mb-6 opacity-90" />
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6">
+            Sports Promotion & Youth Fitness
+          </h1>
+          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
+            Building discipline, teamwork, and healthy lifestyles through sports
+          </p>
         </div>
-    );
+      </section>
+
+      {/* ================= INTRO ================= */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+
+          {/* Text */}
+          <div className="space-y-5">
+            <span className="block uppercase tracking-widest text-xs font-medium text-[var(--green-muted)]">
+              Our Approach
+            </span>
+
+            <h2 className="text-3xl md:text-4xl font-semibold text-[var(--green-primary)]">
+              Sports as a Tool for Youth Development
+            </h2>
+
+            <p className="text-[var(--text-dark)]/80">
+              Sports go far beyond physical fitness. They teach discipline,
+              perseverance, teamwork, leadership, and resilience — qualities
+              essential for success in life.
+            </p>
+
+            <p className="text-[var(--text-dark)]/80">
+              Aspire Technologies creates inclusive sports opportunities by
+              organizing tournaments, providing coaching, and promoting
+              physical fitness in schools and communities.
+            </p>
+
+            <p className="text-[var(--text-dark)]/80">
+              Through sports, we channel youth energy positively, reduce
+              harmful behaviors, and build confident, healthy future leaders.
+            </p>
+          </div>
+
+          {/* Image */}
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1546519638-68e109498ffc"
+              alt="Youth training"
+              className="rounded-3xl shadow-lg object-cover w-full h-[420px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ================= STATS ================= */}
+      <section className="py-16 bg-[var(--bg-cream)]">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+          {[
+            { icon: Target, value: "2000+", label: "Youth Engaged" },
+            { icon: Award, value: "100+", label: "Tournaments Organized" },
+            { icon: Trophy, value: "50+", label: "Schools Reached" },
+          ].map((stat, i) => (
+            <div key={i} className="bg-white rounded-2xl p-8">
+              <stat.icon className="mx-auto mb-3 text-[var(--green-primary)]" />
+              <div className="text-3xl font-semibold text-[var(--green-primary)]">
+                {stat.value}
+              </div>
+              <div className="text-sm text-[var(--text-dark)]/70">
+                {stat.label}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= ACTIVITIES ================= */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+
+          {/* Image strip */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+            {[
+              "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf",
+              "https://images.unsplash.com/photo-1518091043644-c1d4457512c6",
+              "https://images.unsplash.com/photo-1521412644187-c49fa049e84d",
+            ].map((src, i) => (
+              <img
+                key={i}
+                src={src}
+                alt="Sports activity"
+                className="rounded-2xl object-cover h-[240px] w-full"
+              />
+            ))}
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-semibold text-center text-[var(--green-primary)] mb-4">
+            Our Sports Activities
+          </h2>
+          <p className="text-center max-w-2xl mx-auto text-[var(--text-dark)]/70 mb-16">
+            Creating opportunities for youth to engage in organized sports and physical fitness
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {[
+              "Sports Tournaments & Competitions",
+              "School Sports Programs",
+              "Coaching & Skills Training",
+              "Girls’ Sports Promotion",
+              "Fitness & Wellness Programs",
+              "Talent Identification & Support",
+              "Sports Equipment Support",
+              "Sports-Based Life Skills",
+            ].map((title, i) => (
+              <div
+                key={i}
+                className="bg-[var(--bg-cream)] rounded-2xl p-8 hover:shadow-md transition"
+              >
+                <div className="text-[var(--green-muted)] text-sm font-medium mb-3">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
+                <h3 className="text-lg font-semibold mb-3">
+                  {title}
+                </h3>
+                <p className="text-sm text-[var(--text-dark)]/70">
+                  Structured sports programs that build physical fitness,
+                  discipline, teamwork, and leadership among youth.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= IMPACT ================= */}
+      <section className="py-24 bg-[var(--bg-cream)]">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-center text-[var(--green-primary)] mb-16">
+            Impact of Sports Programs
+          </h2>
+
+          <div className="space-y-8">
+            {[
+              "Improved Physical Health",
+              "Enhanced Mental Wellbeing",
+              "Development of Discipline",
+              "Reduced Substance Abuse Risk",
+              "Stronger Community Bonds",
+              "Leadership Development",
+            ].map((item, i) => (
+              <div key={i} className="flex gap-4">
+                <CheckCircle className="text-[var(--green-primary)] mt-1" />
+                <div>
+                  <h4 className="font-semibold">{item}</h4>
+                  <p className="text-sm text-[var(--text-dark)]/70">
+                    Sports participation creates lasting positive effects
+                    on youth behaviour, health, and community culture.
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[var(--green-primary)] mb-6">
+            Help Us Build a Sports Culture
+          </h2>
+          <p className="text-lg text-[var(--text-dark)]/80 mb-10">
+            Sponsor tournaments, donate equipment, or volunteer as a coach.
+            Together, we can give every child the chance to play, compete,
+            and grow through sports.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" className="btn-primary">
+              Contact Us
+            </a>
+            <a href="/partners" className="btn-secondary">
+              Become a Sponsor
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
 }
 
 export default SportsPromotion;

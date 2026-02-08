@@ -146,7 +146,7 @@ function About() {
       </section>
 
       {/* ================= WHO WE SERVE ================= */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-20 md:py-28 ">
         <div className="max-w-7xl mx-auto px-6 text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-semibold text-[var(--green-primary)]">
             Who We Serve
