@@ -23,7 +23,7 @@ function YouthDevelopment() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <Users size={64} className="mx-auto mb-6 opacity-90" />
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6">
-            Youth Development & Empowerment
+            Youth development and Self employment Programs
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
             Building skilled, confident, and responsible youth for a productive future
@@ -85,7 +85,7 @@ function YouthDevelopment() {
         </div>
 
         {/* Supporting Image */}
-        
+
       </section>
 
       {/* ================= ACTIVITIES ================= */}

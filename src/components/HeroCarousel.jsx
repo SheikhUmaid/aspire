@@ -6,7 +6,7 @@ const slides = [
   {
     id: 1,
     image: '/images/youth.png',
-    title: 'Youth Development & Empowerment',
+    title: 'Youth development and Self employment programs',
     description: '"The youth of today are the leaders of tomorrow."',
     ctaText: 'Empower Youth',
     ctaLink: '/programs/youth-development'
