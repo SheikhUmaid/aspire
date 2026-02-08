@@ -1,5 +1,4 @@
 import { Syringe, Target, Shield, Users, Heart, CheckCircle } from 'lucide-react';
-import '../Programs/YouthDevelopment.css';
 
 function VaccinationPrograms() {
     return (

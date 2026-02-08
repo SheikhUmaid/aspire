@@ -1,145 +1,205 @@
 import HeroCarousel from '../../components/HeroCarousel';
 import MissionCards from '../../components/MissionCards';
-import { Target, Eye, Heart, Users, Award, Globe } from 'lucide-react';
-import './Home.css';
+import { Target, Eye, Heart, Users, Award, Globe, ArrowRight } from 'lucide-react';
 
 function Home() {
-    return (
-        <div className="home-page">
-            <HeroCarousel />
+  return (
+    <div className="min-h-screen">
 
-            {/* Mission Cards Section */}
-            <MissionCards />
+      {/* ================= HERO ================= */}
+      <HeroCarousel />
 
-            {/* About Section */}
-            <section className="about-section bg-light-green">
-                <div className="container">
-                    <div className="about-content">
-                        <div className="about-text">
-                            <h2 className="text-green">Building Stronger Communities Together</h2>
-                            <p>
-                                Aspire Technologies stands as a beacon of hope and progress for marginalized and underserved populations across our communities. We are not just an organization – we are a movement dedicated to transforming lives through education, empowerment, and sustainable development.
-                            </p>
-                            <p>
-                                Since our inception, we have worked tirelessly to address the most pressing challenges facing our communities: unemployment among youth, economic vulnerability of women, declining physical health, digital divide, mental health stigma, healthcare access barriers, and animal welfare concerns. Our approach is comprehensive, compassionate, and community-driven.
-                            </p>
-                            <p>
-                                What makes us different is our commitment to holistic development. We don't just provide temporary solutions – we build sustainable systems that empower individuals and communities to create their own opportunities. Through our multi-sector interventions, we ensure that development reaches every corner of society, leaving no one behind.
-                            </p>
-                        </div>
-                        <div className="vision-mission">
-                            <div className="vm-card">
-                                <div className="vm-icon">
-                                    <Eye size={32} />
-                                </div>
-                                <h3>Our Vision</h3>
-                                <p>
-                                    To build an inclusive, progressive, skilled, and healthy society where youth and women are empowered with opportunities, digital competencies, mental wellbeing, and sustainable livelihood for a dignified life.
-                                </p>
-                            </div>
-                            <div className="vm-card">
-                                <div className="vm-icon">
-                                    <Target size={32} />
-                                </div>
-                                <h3>Our Mission</h3>
-                                <p>
-                                    To empower communities through innovative, technology-driven, and socially responsible programs in youth development, women empowerment, sports, digital literacy, mental health awareness, medical camps, vaccination awareness, and animal welfare initiatives.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      {/* ================= ABOUT ================= */}
+      <section className="py-24 md:py-32 bg-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            
+            {/* Image Side */}
+            <div className="order-2 lg:order-1 relative">
+              <div className="relative rounded-[2.5rem] lg:rounded-[3.5rem] overflow-hidden aspect-[4/5]">
+                <img
+                  src="https://peaceinsight.s3.amazonaws.com/media/images/IMG_20230221_133357.width-500.jpg"
+                  alt="Community development"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/10" />
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[var(--accent-gold)]/20 rounded-full blur-3xl"></div>
+              </div>
+            </div>
 
-            {/* Core Values */}
-            <section className="values-section">
-                <div className="container">
-                    <h2 className="section-title text-center">Our Core Values</h2>
-                    <p className="section-subtitle text-center">
-                        These guiding principles shape every decision we make and every program we implement
-                    </p>
-                    <div className="values-grid">
-                        <div className="value-card">
-                            <Heart className="value-icon" />
-                            <h4>Inclusivity & Equality</h4>
-                            <p>We believe everyone deserves equal opportunities regardless of background, gender, or economic status.</p>
-                        </div>
-                        <div className="value-card">
-                            <Users className="value-icon" />
-                            <h4>Community Participation</h4>
-                            <p>Communities are at the heart of our work. We engage, listen, and collaborate with those we serve.</p>
-                        </div>
-                        <div className="value-card">
-                            <Award className="value-icon" />
-                            <h4>Empowerment Through Skills</h4>
-                            <p>We provide tools, training, and knowledge that enable people to create their own opportunities.</p>
-                        </div>
-                        <div className="value-card">
-                            <Globe className="value-icon" />
-                            <h4>Transparency & Accountability</h4>
-                            <p>We maintain the highest standards of integrity and accountability in all our operations.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {/* Content Side */}
+            <div className="order-1 lg:order-2 space-y-6">
+              <span className="inline-block uppercase tracking-widest text-xs font-medium text-[var(--green-muted)] mb-2">
+                Who We Are
+              </span>
 
-            {/* Impact Section */}
-            <section className="impact-section bg-light-green">
-                <div className="container">
-                    <h2 className="section-title text-center text-green">Creating Real Impact</h2>
-                    <p className="section-subtitle text-center">
-                        Our programs are designed to create measurable, sustainable change in communities
-                    </p>
-                    <div className="impact-grid">
-                        <div className="impact-stat">
-                            <div className="stat-number">1000+</div>
-                            <div className="stat-label">Youth Trained in Skills</div>
-                            <p className="stat-description">
-                                Career guidance, vocational training, and leadership development programs helping youth secure employment
-                            </p>
-                        </div>
-                        <div className="impact-stat">
-                            <div className="stat-number">500+</div>
-                            <div className="stat-label">Women Empowered</div>
-                            <p className="stat-description">
-                                Women gaining financial independence through SHGs, entrepreneurship, and livelihood programs
-                            </p>
-                        </div>
-                        <div className="impact-stat">
-                            <div className="stat-number">50+</div>
-                            <div className="stat-label">Communities Served</div>
-                            <p className="stat-description">
-                                Rural and urban communities benefiting from our multi-sector development interventions
-                            </p>
-                        </div>
-                        <div className="impact-stat">
-                            <div className="stat-number">200+</div>
-                            <div className="stat-label">Medical Camps Organized</div>
-                            <p className="stat-description">
-                                Free health check-ups and medical assistance provided to underserved populations
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+              <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-[var(--green-primary)]">
+                Building Stronger Communities Together
+              </h2>
 
-            {/* Call to Action */}
-            <section className="cta-section">
-                <div className="container">
-                    <div className="cta-content">
-                        <h2>Ready to Make a Difference?</h2>
-                        <p>
-                            Join us in our mission to empower communities and create sustainable social change. Whether you want to volunteer, partner with us, or support our programs, there are many ways to get involved.
-                        </p>
-                        <div className="cta-buttons">
-                            <a href="/contact" className="btn btn-primary btn-large">Get in Touch</a>
-                            <a href="/programs/youth-development" className="btn btn-secondary btn-large">Explore Programs</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+              <div className="space-y-5 text-lg leading-relaxed text-[var(--text-dark)]/80">
+                <p>
+                  Aspire Technologies stands as a beacon of hope and progress for marginalized and underserved
+                  populations across our communities.
+                </p>
+
+                <p>
+                  Since our inception, we have worked tirelessly to address unemployment among youth,
+                  economic vulnerability of women, the digital divide, mental health stigma, healthcare
+                  access barriers, and animal welfare concerns.
+                </p>
+
+                <p>
+                  What makes us different is our commitment to holistic development —
+                  we build systems that last.
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
-    );
+      </section>
+
+      {/* ================= PROGRAM AREAS ================= */}
+      <section className="py-24 md:py-32 bg-[var(--bg-cream)]">
+        <MissionCards />
+      </section>
+
+      {/* ================= IMPACT ================= */}
+      <section className="py-24 md:py-32 bg-[var(--green-primary)] text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[var(--accent-gold)]/10 rounded-full blur-3xl"></div>
+        
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <span className="inline-block uppercase tracking-widest text-xs font-medium text-white/70 mb-4">
+              Our Impact
+            </span>
+            <h2 className="text-4xl md:text-5xl font-semibold mb-6">
+              Creating Real Impact
+            </h2>
+            <p className="text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
+              Our programs are designed to create measurable, sustainable change
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { num: '1000+', label: 'Youth Trained', desc: 'Skills, career guidance, and leadership development' },
+              { num: '500+', label: 'Women Empowered', desc: 'Economic independence through SHGs and livelihoods' },
+              { num: '50+', label: 'Communities Served', desc: 'Rural and urban development initiatives' },
+              { num: '200+', label: 'Medical Camps', desc: 'Free healthcare for underserved populations' },
+            ].map(({ num, label, desc }) => (
+              <div
+                key={label}
+                className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/20 hover:bg-white/15 transition"
+              >
+                <div className="text-5xl font-bold mb-4">{num}</div>
+                <div className="font-semibold mb-2 text-lg">{label}</div>
+                <p className="text-sm text-white/80">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= VISION & MISSION ================= */}
+      <section className="py-24 md:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+          {[{
+            icon: Eye,
+            title: "Our Vision",
+            text: "To build an inclusive, skilled, and healthy society where communities thrive."
+          }, {
+            icon: Target,
+            title: "Our Mission",
+            text: "To empower communities through education, skills, healthcare, digital literacy, and social awareness."
+          }].map(({ icon: Icon, title, text }) => (
+            <div key={title} className="bg-white rounded-3xl p-12 shadow-lg border border-[var(--green-muted)]/20">
+              <div className="w-16 h-16 rounded-2xl bg-[var(--green-primary)]/10 flex items-center justify-center mb-6">
+                <Icon className="w-8 h-8 text-[var(--green-primary)]" />
+              </div>
+              <h3 className="text-2xl font-semibold mb-4 text-[var(--green-primary)]">
+                {title}
+              </h3>
+              <p className="text-lg text-[var(--text-dark)]/80 leading-relaxed">
+                {text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= CORE VALUES ================= */}
+      <section className="py-24 md:py-32 bg-[var(--bg-cream)]">
+        <div className="max-w-7xl mx-auto px-6 text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-semibold text-[var(--green-primary)]">
+            Our Core Values
+          </h2>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[Heart, Users, Award, Globe].map((Icon, i) => (
+            <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-[var(--green-muted)]/20">
+              <div className="w-14 h-14 rounded-xl bg-[var(--green-primary)]/10 flex items-center justify-center mx-auto mb-5">
+                <Icon className="w-7 h-7 text-[var(--green-primary)]" />
+              </div>
+              <p className="text-sm text-[var(--text-dark)]/80">
+                Empowerment, inclusivity, accountability, and community-driven change.
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className="py-24 md:py-32 bg-white relative overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+          {/* Image */}
+          <div className="order-2 lg:order-1">
+            <img
+              src="/images/home1.jpeg"
+              alt="Community engagement"
+              className="rounded-[2.5rem] object-cover w-full h-[360px]"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="order-1 lg:order-2 space-y-6">
+            <span className="uppercase tracking-widest text-xs font-medium text-[var(--green-muted)]">
+              Get Involved
+            </span>
+
+            <h2 className="text-4xl md:text-5xl font-semibold text-[var(--green-primary)]">
+              Ready to Make a Difference?
+            </h2>
+
+            <p className="text-lg text-[var(--text-dark)]/80">
+              Join us in empowering communities and creating sustainable social change.
+            </p>
+
+            <div className="flex gap-4 pt-4">
+              <a
+                href="/contact"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[var(--green-primary)] text-white font-semibold hover:bg-[var(--green-dark)]"
+              >
+                Get in Touch <ArrowRight size={18} />
+              </a>
+              <a
+                href="/programs/youth-development"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-[var(--green-primary)] text-[var(--green-primary)] font-semibold hover:bg-[var(--green-primary)] hover:text-white"
+              >
+                Explore Programs
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  );
 }
 
 export default Home;

@@ -1,66 +1,113 @@
-import { Building2, Users, Briefcase, Heart } from 'lucide-react';
-import '../About/About.css';
+import { Building2, Users, Briefcase, Heart, ArrowRight } from 'lucide-react';
 
 function Partners() {
     return (
-        <div className="partners-page">
-            <section className="page-header">
-                <div className="container">
-                    <h1>Partners & Collaboration</h1>
-                    <p className="header-subtitle">
+        <div className="min-h-screen">
+            {/* ================= PAGE HERO ================= */}
+            <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)] to-[var(--green-dark)]"></div>
+                <div className="absolute inset-0 bg-black/20"></div>
+                <div className="relative z-10 max-w-4xl px-6 text-center text-white">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 leading-tight">
+                        Partners & Collaboration
+                    </h1>
+                    <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
                         Building partnerships for greater social impact
                     </p>
                 </div>
             </section>
 
-            <section className="intro-section">
-                <div className="container">
-                    <h2 className="text-green">Collaboration for Change</h2>
-                    <p>
-                        Aspire Technologies believes in the power of partnerships. We actively seek collaborations with government departments, CSR companies, NGOs, educational institutions, healthcare providers, and community organizations to amplify our impact and reach more beneficiaries.
-                    </p>
+            {/* ================= COLLABORATION INTRO ================= */}
+            <section className="py-24 md:py-32 bg-white">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                        {/* Image Side */}
+                        <div className="order-2 lg:order-1">
+                            <div className="relative rounded-[2.5rem] lg:rounded-[3.5rem] overflow-hidden aspect-[4/5] bg-gradient-to-br from-[var(--green-muted)]/30 to-[var(--green-primary)]/20">
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <span className="text-[var(--text-dark)]/40 text-sm font-medium">Partnership Image</span>
+                                </div>
+                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[var(--accent-gold)]/20 rounded-full blur-3xl"></div>
+                            </div>
+                        </div>
 
-                    <div style={{ marginTop: '3rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
-                        <div style={{ padding: '2rem', backgroundColor: 'var(--light-green)', borderRadius: '8px', textAlign: 'center' }}>
-                            <Building2 size={48} style={{ color: 'var(--primary-green)', margin: '0 auto 1rem' }} />
-                            <h3 style={{ color: 'var(--primary-green)', marginBottom: '0.75rem' }}>Government Departments</h3>
-                            <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-gray)' }}>
+                        {/* Content Side */}
+                        <div className="order-1 lg:order-2 space-y-6">
+                            <span className="inline-block uppercase tracking-widest text-xs font-medium text-[var(--green-muted)] mb-2">
+                                Collaboration
+                            </span>
+                            <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-[var(--green-primary)]">
+                                Collaboration for Change
+                            </h2>
+                            <p className="text-lg leading-relaxed text-[var(--text-dark)]/80">
+                                Aspire Technologies believes in the power of partnerships. We actively seek collaborations with government departments, CSR companies, NGOs, educational institutions, healthcare providers, and community organizations to amplify our impact and reach more beneficiaries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ================= PARTNER TYPES ================= */}
+            <section className="py-24 md:py-32 bg-[var(--bg-cream)]">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-[var(--green-muted)]/20 hover:shadow-lg hover:-translate-y-1 transition">
+                            <div className="w-16 h-16 rounded-2xl bg-[var(--green-primary)]/10 flex items-center justify-center mx-auto mb-6">
+                                <Building2 className="w-8 h-8 text-[var(--green-primary)]" />
+                            </div>
+                            <h3 className="text-[var(--green-primary)] mb-3 text-lg font-semibold">Government Departments</h3>
+                            <p className="text-sm text-[var(--text-dark)]/80 leading-relaxed">
                                 Partnering with government agencies for program implementation, resource support, and policy alignment.
                             </p>
                         </div>
 
-                        <div style={{ padding: '2rem', backgroundColor: 'var(--light-green)', borderRadius: '8px', textAlign: 'center' }}>
-                            <Briefcase size={48} style={{ color: 'var(--primary-green)', margin: '0 auto 1rem' }} />
-                            <h3 style={{ color: 'var(--primary-green)', marginBottom: '0.75rem' }}>CSR Companies</h3>
-                            <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-gray)' }}>
+                        <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-[var(--green-muted)]/20 hover:shadow-lg hover:-translate-y-1 transition">
+                            <div className="w-16 h-16 rounded-2xl bg-[var(--green-primary)]/10 flex items-center justify-center mx-auto mb-6">
+                                <Briefcase className="w-8 h-8 text-[var(--green-primary)]" />
+                            </div>
+                            <h3 className="text-[var(--green-primary)] mb-3 text-lg font-semibold">CSR Companies</h3>
+                            <p className="text-sm text-[var(--text-dark)]/80 leading-relaxed">
                                 Collaborating with corporates on CSR initiatives, program  sponsorship, and employee volunteer programs.
                             </p>
                         </div>
 
-                        <div style={{ padding: '2rem', backgroundColor: 'var(--light-green)', borderRadius: '8px', textAlign: 'center' }}>
-                            <Users size={48} style={{ color: 'var(--primary-green)', margin: '0 auto 1rem' }} />
-                            <h3 style={{ color: 'var(--primary-green)', marginBottom: '0.75rem' }}>NGOs & Social Organizations</h3>
-                            <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-gray)' }}>
+                        <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-[var(--green-muted)]/20 hover:shadow-lg hover:-translate-y-1 transition">
+                            <div className="w-16 h-16 rounded-2xl bg-[var(--green-primary)]/10 flex items-center justify-center mx-auto mb-6">
+                                <Users className="w-8 h-8 text-[var(--green-primary)]" />
+                            </div>
+                            <h3 className="text-[var(--green-primary)] mb-3 text-lg font-semibold">NGOs & Social Organizations</h3>
+                            <p className="text-sm text-[var(--text-dark)]/80 leading-relaxed">
                                 Working with fellow NGOs and social organizations for knowledge sharing and joint program implementation.
                             </p>
                         </div>
 
-                        <div style={{ padding: '2rem', backgroundColor: 'var(--light-green)', borderRadius: '8px', textAlign: 'center' }}>
-                            <Heart size={48} style={{ color: 'var(--primary-green)', margin: '0 auto 1rem' }} />
-                            <h3 style={{ color: 'var(--primary-green)', marginBottom: '0.75rem' }}>Educational & Healthcare Institutions</h3>
-                            <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-gray)' }}>
+                        <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-[var(--green-muted)]/20 hover:shadow-lg hover:-translate-y-1 transition">
+                            <div className="w-16 h-16 rounded-2xl bg-[var(--green-primary)]/10 flex items-center justify-center mx-auto mb-6">
+                                <Heart className="w-8 h-8 text-[var(--green-primary)]" />
+                            </div>
+                            <h3 className="text-[var(--green-primary)] mb-3 text-lg font-semibold">Educational & Healthcare Institutions</h3>
+                            <p className="text-sm text-[var(--text-dark)]/80 leading-relaxed">
                                 Partnering with schools, colleges, hospitals, and clinics for program delivery and service provision.
                             </p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <div style={{ marginTop: '3rem', padding: '2rem', backgroundColor: 'var(--primary-green)', borderRadius: '8px', textAlign: 'center', color: 'white' }}>
-                        <h2 style={{ color: 'white', marginBottom: '1rem' }}>Interested in Partnering With Us?</h2>
-                        <p style={{ fontSize: '1.05rem', marginBottom: '1.5rem', color: 'rgba(255,255,255,0.9)' }}>
-                            We welcome partnerships that align with our mission and values. Together, we can create greater social impact.
-                        </p>
-                        <a href="/contact" className="btn btn-primary btn-large" style={{ backgroundColor: 'white', color: 'var(--primary-green)' }}>Contact Us for Partnership</a>
-                    </div>
+            {/* ================= PARTNERSHIP CTA ================= */}
+            <section className="py-24 md:py-32 bg-[var(--green-primary)] text-white relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-[var(--accent-gold)]/10 rounded-full blur-3xl"></div>
+                
+                <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+                    <h2 className="text-4xl md:text-5xl font-semibold mb-6">Interested in Partnering With Us?</h2>
+                    <p className="text-lg text-white/90 mb-10 leading-relaxed">
+                        We welcome partnerships that align with our mission and values. Together, we can create greater social impact.
+                    </p>
+                    <a href="/contact" className="btn-primary bg-white text-[var(--green-primary)] hover:bg-[var(--bg-cream)] inline-flex items-center gap-2">
+                        Contact Us for Partnership
+                        <ArrowRight size={18} />
+                    </a>
                 </div>
             </section>
         </div>

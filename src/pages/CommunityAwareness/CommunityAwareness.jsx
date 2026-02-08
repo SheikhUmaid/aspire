@@ -1,4 +1,3 @@
-import '../About/About.css';
 
 function CommunityAwareness() {
     return (

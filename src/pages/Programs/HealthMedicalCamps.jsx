@@ -1,207 +1,191 @@
-import { Stethoscope, Target, Heart, Users, Activity, CheckCircle } from 'lucide-react';
-import '../Programs/YouthDevelopment.css';
+import {
+  Stethoscope,
+  Target,
+  Heart,
+  Activity,
+  CheckCircle,
+} from "lucide-react";
 
 function HealthMedicalCamps() {
-    return (
-        <div className="program-page">
-            <section className="program-header">
-                <div className="container">
-                    <div className="header-content">
-                        <Stethoscope className="header-icon" size={64} />
-                        <h1>Health Awareness & Medical Camps</h1>
-                        <p className="header-tagline">
-                            Bringing healthcare services to underserved communities
-                        </p>
-                    </div>
-                </div>
-            </section>
+  return (
+    <div className="w-full text-[var(--text-dark)]">
 
-            <section className="program-intro">
-                <div className="container">
-                    <div className="intro-content">
-                        <div className="intro-text">
-                            <h2>Healthcare for All</h2>
-                            <p>
-                                Access to basic healthcare remains a significant challenge for many communities, especially in rural and economically weaker areas. Long distances to health facilities, high medical costs, lack of health insurance, and limited awareness about preventive healthcare create barriers that prevent people from getting timely medical attention. Many health problems go undiagnosed until they become serious, leading to unnecessary suffering and financial burden on families.
-                            </p>
-                            <p>
-                                Aspire Technologies believes that healthcare is a fundamental right, not a privilege determined by economic status. Our Health Awareness & Medical Camps program works to bring basic healthcare services directly to underserved communities, making medical consultation and screening accessible to those who might otherwise never seek professional medical help.
-                            </p>
-                            <p>
-                                Through free medical camps, we provide general health check-ups, specialist consultations, basic diagnostics, medicine distribution, and health education. But beyond treating immediate health issues, we focus heavily on preventive healthcare education – teaching communities about nutrition, hygiene, disease prevention, and healthy lifestyles. An ounce of prevention is worth a pound of cure, and our health awareness programs help people avoid many common health problems through knowledge and healthy practices.
-                            </p>
-                        </div>
-                        <div className="intro-stats">
-                            <div className="stat-box">
-                                <Target className="stat-icon" />
-                                <div className="stat-number">10,000+</div>
-                                <div className="stat-label">People Examined</div>
-                            </div>
-                            <div className="stat-box">
-                                <Heart className="stat-icon" />
-                                <div className="stat-number">200+</div>
-                                <div className="stat-label">Camps Organized</div>
-                            </div>
-                            <div className="stat-box">
-                                <Activity className="stat-icon" />
-                                <div className="stat-number">50+</div>
-                                <div className="stat-label">Villages Covered</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      {/* ================= HERO ================= */}
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--green-primary)] to-[var(--green-dark)]" />
+        <div className="absolute inset-0 bg-black/15" />
 
-            <section className="activities-section bg-light-green">
-                <div className="container">
-                    <h2 className="section-title text-center text-green">Our Healthcare Activities</h2>
-                    <p className="section-subtitle text-center">
-                        Comprehensive health services and awareness programs for community wellbeing
-                    </p>
-                    <div className="activities-grid">
-                        <div className="activity-card">
-                            <div className="activity-number">01</div>
-                            <h3>General Health Check-up Camps</h3>
-                            <p>
-                                We organize free general health camps where qualified doctors examine patients, diagnose common ailments, provide prescriptions, and offer health advice. These camps are especially valuable for elderly people, women, and economically weaker families who cannot afford regular medical consultations.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">02</div>
-                            <h3>Eye Check-up & Vision Care</h3>
-                            <p>
-                                Vision problems are common but often go untreated due to lack of access to eye care. Our eye camps provide vision testing, refractive error diagnosis, prescription of spectacles, and identification of serious eye conditions requiring specialized treatment. We partner with eye hospitals for surgeries when needed.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">03</div>
-                            <h3>Dental Health Camps</h3>
-                            <p>
-                                Dental health is frequently neglected, especially in rural areas. We conduct dental camps offering check-ups, oral health education, basic treatments, and referrals for complex dental issues. Teaching proper dental hygiene practices can prevent most common dental problems.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">04</div>
-                            <h3>Blood Pressure & Diabetes Screening</h3>
-                            <p>
-                                Hypertension and diabetes are silent killers often undiagnosed until complications arise. Our regular screening camps test blood pressure and blood sugar levels, identify at-risk individuals, provide lifestyle counseling, and ensure timely medical intervention for those with concerning results.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">05</div>
-                            <h3>Women's Health Programs</h3>
-                            <p>
-                                We conduct special health camps focusing on women's health issues including reproductive health, maternal health, anemia screening, breast examination awareness, cervical cancer screening information, and menopause health. Creating women-friendly healthcare environments encourages women to seek necessary medical care.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">06</div>
-                            <h3>Child Health & Nutrition</h3>
-                            <p>
-                                Children's health determines their entire life trajectory. We provide pediatric consultations, growth monitoring, nutritional assessment, deworming, vitamin supplementation, and parental education about child nutrition, common childhood illnesses, and developmental milestones.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">07</div>
-                            <h3>Hygiene & Sanitation Awareness</h3>
-                            <p>
-                                Many diseases are preventable through proper hygiene and sanitation practices. We educate communities about handwashing, safe drinking water, toilet usage, food hygiene, waste disposal, and personal cleanliness. Behavioral change in hygiene practices significantly reduces disease burden.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">08</div>
-                            <h3>Nutrition & Balanced Diet Education</h3>
-                            <p>
-                                Malnutrition and poor dietary habits contribute to numerous health problems. Our nutrition education programs teach about balanced diets, locally available nutritious foods, food preparation methods that preserve nutrients, dietary needs for different age groups, and managing common nutritional deficiencies.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">09</div>
-                            <h3>Communicable Disease Awareness</h3>
-                            <p>
-                                We create awareness about prevention and control of communicable diseases like tuberculosis, malaria, dengue, COVID-19, and other infectious diseases. Education about symptoms, transmission routes, prevention methods, and treatment seeking helps control disease spread.
-                            </p>
-                        </div>
-                        <div className="activity-card">
-                            <div className="activity-number">10</div>
-                            <h3>Medical Referral Support</h3>
-                            <p>
-                                When our camps identify serious health conditions requiring specialized treatment, we provide guidance and referrals to appropriate hospitals and specialists. We maintain networks with healthcare institutions for follow-up care and sometimes assist with connecting patients to government health schemes.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="impact-section">
-                <div className="container">
-                    <h2 className="section-title text-center">Health Impact in Communities</h2>
-                    <p className="section-subtitle text-center">
-                        Accessible healthcare creates healthier, more productive communities
-                    </p>
-                    <div className="impact-list">
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Early Disease Detection</h4>
-                                <p>Medical camps identify health problems in early stages when treatment is more effective and less costly.</p>
-                            </div>
-                        </div>
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Reduced Healthcare Costs</h4>
-                                <p>Free basic healthcare and preventive care reduce the financial burden of medical expenses on poor families.</p>
-                            </div>
-                        </div>
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Improved Health Awareness</h4>
-                                <p>Health education empowers communities with knowledge to make better health decisions and adopt healthier lifestyles.</p>
-                            </div>
-                        </div>
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Better Maternal & Child Health</h4>
-                                <p>Focused programs on women's and children's health improve nutrition, reduce maternal mortality, and ensure better child development.</p>
-                            </div>
-                        </div>
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Community Health Culture</h4>
-                                <p>Regular health camps and awareness programs create a culture where health is prioritized and medical help-seeking becomes normalized.</p>
-                            </div>
-                        </div>
-                        <div className="impact-item">
-                            <CheckCircle className="impact-icon" />
-                            <div className="impact-text">
-                                <h4>Reduced Disease Burden</h4>
-                                <p>Preventive care and early treatment reduce the overall burden of disease, creating healthier and more productive communities.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="cta-section">
-                <div className="container">
-                    <div className="cta-content">
-                        <h2>Support Community Healthcare</h2>
-                        <p>
-                            Help us organize medical camps and bring healthcare to underserved communities. Medical professionals can volunteer their services, organizations can sponsor camps, and supporters can help with logistics and outreach.
-                        </p>
-                        <div className="cta-buttons">
-                            <a href="/contact" className="btn btn-primary btn-large">Contact Us</a>
-                            <a href="/partners" className="btn btn-secondary btn-large">Support Health Programs</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+          <Stethoscope size={64} className="mx-auto mb-6 opacity-90" />
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6">
+            Health Awareness & Medical Camps
+          </h1>
+          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
+            Bringing healthcare services to underserved communities
+          </p>
         </div>
-    );
+      </section>
+
+      {/* ================= INTRO ================= */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-20">
+
+          {/* Text */}
+          <div className="lg:col-span-2 space-y-5">
+            <span className="block uppercase tracking-widest text-xs font-medium text-[var(--green-muted)]">
+              Our Mission
+            </span>
+
+            <h2 className="text-3xl md:text-4xl font-semibold text-[var(--green-primary)]">
+              Healthcare for All
+            </h2>
+
+            <p className="text-[var(--text-dark)]/80">
+              Access to basic healthcare remains a challenge for many communities,
+              especially in rural and economically weaker areas. Distance, cost,
+              and lack of awareness often delay treatment until illnesses become severe.
+            </p>
+
+            <p className="text-[var(--text-dark)]/80">
+              Aspire Technologies believes healthcare is a fundamental right.
+              Our Health Awareness & Medical Camps bring essential medical services
+              directly to communities that need them most.
+            </p>
+
+            <p className="text-[var(--text-dark)]/80">
+              Through free medical camps and preventive education, we focus not only
+              on treating illness but also on empowering people with knowledge
+              about nutrition, hygiene, disease prevention, and healthy lifestyles.
+            </p>
+          </div>
+
+          {/* Stats */}
+          <div className="space-y-6">
+            {[
+              { icon: Target, value: "10,000+", label: "People Examined" },
+              { icon: Heart, value: "200+", label: "Camps Organized" },
+              { icon: Activity, value: "50+", label: "Villages Covered" },
+            ].map((stat, i) => (
+              <div
+                key={i}
+                className="bg-[var(--bg-cream)] rounded-2xl p-6 text-center"
+              >
+                <stat.icon className="mx-auto mb-3 text-[var(--green-primary)]" />
+                <div className="text-3xl font-semibold text-[var(--green-primary)]">
+                  {stat.value}
+                </div>
+                <div className="text-sm text-[var(--text-dark)]/70">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= ACTIVITIES ================= */}
+      <section className="py-24 bg-[var(--bg-cream)]">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-center text-[var(--green-primary)] mb-4">
+            Our Healthcare Activities
+          </h2>
+          <p className="text-center max-w-2xl mx-auto text-[var(--text-dark)]/70 mb-16">
+            Comprehensive health services and awareness programs for community wellbeing
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {[
+              "General Health Check-up Camps",
+              "Eye Check-up & Vision Care",
+              "Dental Health Camps",
+              "Blood Pressure & Diabetes Screening",
+              "Women's Health Programs",
+              "Child Health & Nutrition",
+              "Hygiene & Sanitation Awareness",
+              "Nutrition & Balanced Diet Education",
+              "Communicable Disease Awareness",
+              "Medical Referral Support",
+            ].map((title, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-2xl p-8 hover:shadow-md transition"
+              >
+                <div className="text-[var(--green-muted)] text-sm font-medium mb-3">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-[var(--text-dark)]">
+                  {title}
+                </h3>
+                <p className="text-sm text-[var(--text-dark)]/70 leading-relaxed">
+                  Community-based healthcare initiatives that promote early diagnosis,
+                  preventive care, and long-term wellbeing.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= IMPACT ================= */}
+      <section className="py-24 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-center text-[var(--green-primary)] mb-4">
+            Health Impact in Communities
+          </h2>
+          <p className="text-center text-[var(--text-dark)]/70 mb-16">
+            Accessible healthcare builds healthier, more resilient communities
+          </p>
+
+          <div className="space-y-8">
+            {[
+              "Early Disease Detection",
+              "Reduced Healthcare Costs",
+              "Improved Health Awareness",
+              "Better Maternal & Child Health",
+              "Community Health Culture",
+              "Reduced Disease Burden",
+            ].map((item, i) => (
+              <div key={i} className="flex gap-4">
+                <CheckCircle className="text-[var(--green-primary)] mt-1" />
+                <div>
+                  <h4 className="font-semibold text-[var(--text-dark)]">
+                    {item}
+                  </h4>
+                  <p className="text-sm text-[var(--text-dark)]/70">
+                    Preventive care, education, and timely treatment reduce
+                    suffering and improve overall quality of life.
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className="py-24 bg-[var(--bg-cream)]">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[var(--green-primary)] mb-6">
+            Support Community Healthcare
+          </h2>
+          <p className="text-lg text-[var(--text-dark)]/80 mb-10">
+            Help us organize medical camps and deliver healthcare to underserved
+            communities. Medical professionals, organizations, and supporters
+            can all play a vital role.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" className="btn-primary">
+              Contact Us
+            </a>
+            <a href="/partners" className="btn-secondary">
+              Support Health Programs
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
 
 export default HealthMedicalCamps;

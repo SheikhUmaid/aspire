@@ -23,7 +23,6 @@ import Approach from './pages/Approach/Approach';
 import Partners from './pages/Partners/Partners';
 import Impact from './pages/Impact/Impact';
 
-import './App.css';
 
 function App() {
   return (

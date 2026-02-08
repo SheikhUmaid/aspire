@@ -1,5 +1,4 @@
 import { Trophy, Target, Award, Heart, Users, CheckCircle } from 'lucide-react';
-import '../Programs/YouthDevelopment.css';
 
 function SportsPromotion() {
     return (
