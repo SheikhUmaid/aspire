@@ -70,7 +70,8 @@ function Footer() {
                         <ul className="list-none p-0 m-0">
                             <li className="flex items-start gap-3 mb-4 text-white/85 text-[0.95rem] leading-relaxed">
                                 <MapPin size={18} className="flex-shrink-0 mt-0.5" />
-                                <span>123 Community Center Road<br />City, State - 123456</span>
+                                <span>H/O : Aspire Technologies
+                                    3rd floor , Dar Building Opp. Bhat Complex Taengpora Lane 19 Mominabad Batamaloo,Srinagar-190010</span>
                             </li>
                             <li className="flex items-start gap-3 mb-4 text-white/85 text-[0.95rem] leading-relaxed">
                                 <Phone size={18} className="flex-shrink-0 mt-0.5" />
@@ -86,7 +87,7 @@ function Footer() {
 
                 <div className="border-t border-white/20 pt-6 text-center">
                     <p className="text-white/85 text-sm mb-1">&copy; {currentYear} Aspire Technologies. All rights reserved.</p>
-                    <p className="font-medium text-[var(--accent-gold)] text-sm">Empowering Communities | Building Futures</p>
+                    <p className="font-medium text-[var(--accent-gold)] text-sm">Born to lead. Serving to Empower</p>
                     <p className="font-medium text-[var(--accent-gold)] text-sm">Crafted with ❤️ by <a href="https://gratifylabs.in" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 transition-colors">Gratify Labs Pvt Ltd</a></p>
                 </div>
             </div>

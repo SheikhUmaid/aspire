@@ -38,7 +38,7 @@ function Header() {
               <span className="text-[1.6rem] font-extrabold text-[var(--green-primary)] leading-tight tracking-tight">
                 Aspire Technologies
               </span>
-              <span className="text-[0.85rem] text-[var(--text-dark)]/60 font-medium uppercase tracking-wider">
+              <span className="text-[0.70rem] text-[var(--text-dark)]/60 font-medium uppercase tracking-wider">
                 Born to lead. Serving to Empower
               </span>
             </div>

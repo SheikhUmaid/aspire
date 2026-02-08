@@ -89,7 +89,7 @@ function MentalHealth() {
         </div>
       </section>
 
-     
+
 
       {/* ================= ACTIVITIES ================= */}
       <section className="py-24 bg-white">
@@ -108,7 +108,7 @@ function MentalHealth() {
               "Stress Management Workshops",
               "Suicide Prevention Programs",
               "Counseling Support & Referrals",
-              "Addiction & Rehabilitation Awareness",
+              "De-Addiction & Rehabilitation Awareness",
               "Workplace Mental Health",
               "Family & Parenting Counseling",
               "Trauma & PTSD Awareness",
