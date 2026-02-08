@@ -16,7 +16,7 @@ function Home() {
             
             {/* Image Side */}
             <div className="order-2 lg:order-1 relative">
-              <div className="relative rounded-[2.5rem] lg:rounded-[3.5rem] overflow-hidden aspect-[4/5]">
+              <div className="relative  overflow-hidden aspect-[1/1]">
                 <img
                   src="https://peaceinsight.s3.amazonaws.com/media/images/IMG_20230221_133357.width-500.jpg"
                   alt="Community development"
@@ -161,7 +161,7 @@ function Home() {
             <img
               src="/images/home1.jpeg"
               alt="Community engagement"
-              className="rounded-[2.5rem] object-cover w-full h-[360px]"
+              className=" object-cover w-full h-[360px]"
             />
           </div>
 
