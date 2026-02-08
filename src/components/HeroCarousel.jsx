@@ -4,24 +4,70 @@ import { Link } from 'react-router-dom'
 
 const slides = [
   {
+    id: 1,
     image: '/images/hero_youth.png',
-    title: 'Empowering Youth for a Brighter Future',
-    desc: 'Providing skills, guidance, and opportunities to help young people realize their full potential.',
-    link: '/programs/youth-development',
+    title: 'Youth Development & Empowerment',
+    description: '"The youth of today are the leaders of tomorrow."',
+    ctaText: 'Empower Youth',
+    ctaLink: '/programs/youth-development'
   },
   {
+    id: 2,
     image: '/images/hero_women.png',
-    title: 'Strengthening Women, Transforming Communities',
-    desc: 'Creating pathways for economic independence and social empowerment.',
-    link: '/programs/women-empowerment',
+    title: 'Women Empowerment & Livelihood',
+    description: '"There is no tool for development more effective than the empowerment of women."',
+    ctaText: 'Support Women',
+    ctaLink: '/programs/women-empowerment'
   },
   {
-    image: '/images/hero_health.png',
-    title: 'Accessible Healthcare for All',
-    desc: 'Medical camps and health awareness for underserved communities.',
-    link: '/programs/health-medical-camps',
+    id: 3,
+    image: '/images/hero_youth.png', // Reusing youth image
+    title: 'Sports Promotion & Youth Fitness',
+    description: '"Sports do not build character, they reveal it."',
+    ctaText: 'Join the Game',
+    ctaLink: '/programs/sports-promotion'
   },
-]
+  {
+    id: 4,
+    image: '/images/hero_women.png', // Reusing women image (learning context)
+    title: 'Digital Technologies & Skill Development',
+    description: '"Technology is best when it brings people together."',
+    ctaText: 'Get Digital',
+    ctaLink: '/programs/digital-skills'
+  },
+  {
+    id: 5,
+    image: '/images/hero_health.png', // Reusing health image
+    title: 'Mental Health Awareness',
+    description: '"Mental health is not a destination, but a process. It\'s about how you drive, not where you\'re going."',
+    ctaText: 'Break the Stigma',
+    ctaLink: '/programs/mental-health'
+  },
+  {
+    id: 6,
+    image: '/images/hero_health.png',
+    title: 'Health Awareness & Medical Camps',
+    description: '"He who has health has hope; and he who has hope has everything."',
+    ctaText: 'Health for All',
+    ctaLink: '/programs/health-medical-camps'
+  },
+  {
+    id: 7,
+    image: '/images/hero_health.png', // Reusing health image
+    title: 'Vaccination Awareness Programs',
+    description: '"Vaccines bring us closer. Prevention is better than cure."',
+    ctaText: 'Stay Safe',
+    ctaLink: '/programs/vaccination-programs'
+  },
+  {
+    id: 8,
+    image: '/images/hero_youth.png', // Reusing youth image (compassion context)
+    title: 'Animal Welfare Programs',
+    description: '"The greatness of a nation can be judged by the way its animals are treated."',
+    ctaText: 'Protect Animals',
+    ctaLink: '/programs/animal-welfare'
+  }
+];
 
 export default function HeroCarousel() {
   const [i, setI] = useState(0)
@@ -38,9 +84,8 @@ export default function HeroCarousel() {
       {slides.map((s, idx) => (
         <div
           key={idx}
-          className={`absolute inset-0 transition-opacity duration-700 ${
-            i === idx ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`absolute inset-0 transition-opacity duration-700 ${i === idx ? 'opacity-100' : 'opacity-0'
+            }`}
           style={{
             backgroundImage: `url(${s.image})`,
             backgroundSize: 'cover',
@@ -57,12 +102,12 @@ export default function HeroCarousel() {
                 {s.title}
               </h1>
 
-              <p className="text-white/90 text-lg md:text-xl max-w-2xl mx-auto mb-10">
-                {s.desc}
+              <p className="text-white/90 text-lg md:text-xl max-w-2xl mx-auto mb-10 italic font-light">
+                {s.description}
               </p>
 
               <Link
-                to={s.link}
+                to={s.ctaLink}
                 className="
                   inline-flex items-center gap-3
                   bg-[var(--green-primary)]
@@ -75,7 +120,7 @@ export default function HeroCarousel() {
                   transition
                 "
               >
-                Learn More <ArrowRight size={18} />
+                {s.ctaText} <ArrowRight size={18} />
               </Link>
             </div>
           </div>

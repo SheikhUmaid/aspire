@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 function Footer() {
-    const currentYear = new Date().getFullYear();
+    const currentYear = 2021;
 
     return (
         <footer className="bg-[var(--green-primary)] text-white mt-20 py-12">
@@ -87,6 +87,7 @@ function Footer() {
                 <div className="border-t border-white/20 pt-6 text-center">
                     <p className="text-white/85 text-sm mb-1">&copy; {currentYear} Aspire Technologies. All rights reserved.</p>
                     <p className="font-medium text-[var(--accent-gold)] text-sm">Empowering Communities | Building Futures</p>
+                    <p className="font-medium text-[var(--accent-gold)] text-sm">Crafted with ❤️ by <a href="https://gratifylabs.in" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 transition-colors">Gratify Labs Pvt Ltd</a></p>
                 </div>
             </div>
         </footer>
