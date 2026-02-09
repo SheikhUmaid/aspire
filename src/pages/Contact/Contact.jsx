@@ -46,7 +46,7 @@ function Contact() {
                 </p>
               </div>
 
-              
+
 
               {/* Contact Cards */}
               <div className="space-y-6">
@@ -58,10 +58,9 @@ function Contact() {
                   <div>
                     <h4 className="text-lg font-semibold mb-2">Our Address</h4>
                     <p className="text-[var(--text-dark)]/80 leading-relaxed">
-                      123 Community Center Road <br />
-                      Near City Hospital <br />
-                      City, State – 123456 <br />
-                      India
+                      H/O : Aspire Technologies
+                      3rd floor , Dar Building Opp. Bhat Complex Taengpora Lane 19 Mominabad Batamaloo,Srinagar-190010
+
                     </p>
                   </div>
                 </div>
